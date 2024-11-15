@@ -1,0 +1,579 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mainSetting"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout"
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize"
+        android:background="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/tvTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:fontFamily="@font/poppins_medium"
+            android:text="Setting"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    <androidx.core.widget.NestedScrollView
+        android:id="@+id/scrollView"
+        style="@style/ScrollStyle"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="#F3F4F6"
+        android:paddingBottom="40dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/constraintLayout">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="30dp"
+                android:layout_marginTop="12dp"
+                android:fontFamily="@font/poppins_medium"
+                android:text="App Settings"
+                android:textColor="@color/unSelectedTextColor" />
+
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="12dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginBottom="16dp"
+                app:cardCornerRadius="8dp"
+                app:cardElevation="4dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        style="@style/ClickableBackground"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingHorizontal="@dimen/default_margin"
+                        android:paddingVertical="10dp"
+                        android:visibility="gone">
+
+                        <TextView
+                            android:id="@+id/tvLanguage"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginEnd="16dp"
+                            android:fontFamily="@font/poppins_semi_bold"
+                            android:singleLine="true"
+                            android:text="Change Language"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/default_text_size_extra_small"
+                            app:layout_constraintEnd_toStartOf="@+id/ivArrowLanguage"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <TextView
+                            android:id="@+id/tvSelectedLanguage"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/default_margin_extra_small"
+                            android:layout_marginEnd="16dp"
+                            android:fontFamily="@font/poppins_light"
+                            android:text="Default English"
+                            android:textColor="@color/color_accent"
+                            android:textSize="@dimen/default_text_size_extra_small"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toStartOf="@+id/ivArrowLanguage"
+                            app:layout_constraintStart_toStartOf="@id/tvLanguage"
+                            app:layout_constraintTop_toBottomOf="@id/tvLanguage" />
+
+                        <ImageView
+                            android:id="@+id/ivArrowLanguage"
+                            android:layout_width="22dp"
+                            android:layout_height="22dp"
+                            android:src="@drawable/ic_arrow_right"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintTop_toTopOf="parent"
+                            app:tint="#1362BE" />
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="#F3F4F6" />
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:id="@+id/clTheme"
+                        style="@style/ClickableBackground"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingHorizontal="@dimen/default_margin"
+                        android:paddingVertical="10dp"
+                        android:visibility="gone">
+
+                        <TextView
+                            android:id="@+id/tvChangeTheme"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginEnd="16dp"
+                            android:fontFamily="@font/poppins_semi_bold"
+                            android:singleLine="true"
+                            android:text="Change Theme"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/default_text_size_extra_small"
+                            app:layout_constraintEnd_toStartOf="@+id/ivArrowTheme"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <TextView
+                            android:id="@+id/tvSeletedTheme"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/default_margin_extra_small"
+                            android:layout_marginEnd="16dp"
+                            android:fontFamily="@font/poppins_light"
+                            android:text="System Default"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/default_text_size_extra_small"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toStartOf="@+id/ivArrowTheme"
+                            app:layout_constraintStart_toStartOf="@id/tvChangeTheme"
+                            app:layout_constraintTop_toBottomOf="@id/tvChangeTheme" />
+
+                        <ImageView
+                            android:id="@+id/ivArrowTheme"
+                            android:layout_width="22dp"
+                            android:layout_height="22dp"
+                            android:src="@drawable/ic_arrow_right"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintTop_toTopOf="parent"
+                            app:tint="#1362BE" />
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="#F3F4F6" />
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:id="@+id/clSearchEngine"
+                        style="@style/ClickableBackground"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingHorizontal="@dimen/default_margin"
+                        android:paddingVertical="10dp">
+
+                        <TextView
+                            android:id="@+id/tvSearchEngine"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginEnd="16dp"
+                            android:fontFamily="@font/poppins_semi_bold"
+                            android:singleLine="true"
+                            android:text="Search Engines"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/default_text_size_extra_small"
+                            app:layout_constraintEnd_toStartOf="@+id/ivArrowSearchEngine"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <TextView
+                            android:id="@+id/tvSelectedSearchEngine"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/default_margin_extra_small"
+                            android:layout_marginEnd="16dp"
+                            android:fontFamily="@font/poppins_light"
+                            android:text="Google"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/default_text_size_extra_small"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toStartOf="@+id/ivArrowSearchEngine"
+                            app:layout_constraintStart_toStartOf="@id/tvSearchEngine"
+                            app:layout_constraintTop_toBottomOf="@id/tvSearchEngine" />
+
+                        <ImageView
+                            android:id="@+id/ivArrowSearchEngine"
+                            android:layout_width="22dp"
+                            android:layout_height="22dp"
+                            android:src="@drawable/ic_arrow_right"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintTop_toTopOf="parent"
+                            app:tint="#1362BE" />
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="#F3F4F6" />
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:id="@+id/clSelectCamera"
+                        style="@style/ClickableBackground"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingHorizontal="@dimen/default_margin"
+                        android:paddingVertical="10dp">
+
+                        <TextView
+                            android:id="@+id/tvCamera"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginEnd="16dp"
+                            android:fontFamily="@font/poppins_semi_bold"
+                            android:singleLine="true"
+                            android:text="Camera"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/default_text_size_extra_small"
+                            app:layout_constraintEnd_toStartOf="@+id/ivCameraArrow"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <TextView
+                            android:id="@+id/tvSelectedCamera"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/default_margin_extra_small"
+                            android:layout_marginEnd="16dp"
+                            android:fontFamily="@font/poppins_light"
+                            android:text=""
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/default_text_size_extra_small"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toStartOf="@+id/ivCameraArrow"
+                            app:layout_constraintStart_toStartOf="@id/tvCamera"
+                            app:layout_constraintTop_toBottomOf="@id/tvCamera" />
+
+                        <ImageView
+                            android:id="@+id/ivCameraArrow"
+                            android:layout_width="22dp"
+                            android:layout_height="22dp"
+                            android:src="@drawable/ic_arrow_right"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintTop_toTopOf="parent"
+                            app:tint="#1362BE" />
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginBottom="16dp"
+                app:cardCornerRadius="8dp"
+                app:cardElevation="4dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <com.utilitytoolbox.qrscanner.barcodescanner.view.BtnSettings
+                        android:id="@+id/ivBatchScanning"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:visibility="gone"
+                        app:hint="Turn on/off batch scanning"
+                        app:text="Batch Scanning" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="#F3F4F6"
+                        android:visibility="gone" />
+
+                    <com.utilitytoolbox.qrscanner.barcodescanner.view.BtnSettings
+                        android:id="@+id/fmVibrate"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:hint="Vibrate phone when detecting QR Code"
+                        app:text="Vibration" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="#F3F4F6" />
+
+                    <com.utilitytoolbox.qrscanner.barcodescanner.view.BtnSettings
+                        android:id="@+id/fmBeep"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:hint="Produce sound when QR Code detected"
+                        app:text="Sound" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="#F3F4F6" />
+
+
+                    <com.utilitytoolbox.qrscanner.barcodescanner.view.BtnSettings
+                        android:id="@+id/fmDuplicate"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:hint="Save duplicate QR/Barcode in history"
+                        app:text="Duplicate QR/Barcode" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="#F3F4F6" />
+
+                    <com.utilitytoolbox.qrscanner.barcodescanner.view.BtnSettings
+                        android:id="@+id/fmAutoBrowse"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:hint="Browse automatically when QR detected"
+                        app:text="Auto Web Search" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="#F3F4F6" />
+
+                    <com.utilitytoolbox.qrscanner.barcodescanner.view.BtnSettings
+                        android:id="@+id/fmSaveHistory"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:hint="Save your search or created QR &amp; Barcode"
+                        app:text="Save History" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="#F3F4F6" />
+
+
+                    <com.utilitytoolbox.qrscanner.barcodescanner.view.BtnSettings
+                        android:id="@+id/iv_rate_us"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="4dp"
+                        android:visibility="gone"
+                        app:isDelimiterVisible="false"
+                        app:isSwitchVisible="false"
+                        app:text="Rate us" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="#F3F4F6"
+                        android:visibility="gone" />
+
+                    <com.utilitytoolbox.qrscanner.barcodescanner.view.BtnSettings
+                        android:id="@+id/iv_remove_ads"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="4dp"
+                        android:visibility="gone"
+                        app:isDelimiterVisible="false"
+                        app:isSwitchVisible="false"
+                        app:text="emove ads" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="#F3F4F6"
+                        android:visibility="gone" />
+
+
+                    <com.utilitytoolbox.qrscanner.barcodescanner.view.BtnSettings
+                        android:id="@+id/iv_app_version"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layoutDirection="locale"
+                        android:padding="4dp"
+                        android:visibility="gone"
+                        app:isDelimiterVisible="false"
+                        app:isSwitchVisible="false"
+                        app:text="Version: 1.0.0" />
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+
+            <TextView
+                style="@style/SettingsGroupTitleTextViewStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="30dp"
+                android:fontFamily="@font/poppins_medium"
+                android:text="General Settings"
+                android:textColor="@color/unSelectedTextColor" />
+
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="12dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginBottom="52dp"
+                android:paddingBottom="20dp"
+                app:cardCornerRadius="8dp"
+                app:cardElevation="4dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <com.utilitytoolbox.qrscanner.barcodescanner.view.BtnSettings
+                        android:id="@+id/fmFavHistory"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="4dp"
+                        android:visibility="gone"
+                        app:hint="Check out All Faviourits"
+                        app:isDelimiterVisible="false"
+                        app:isSwitchVisible="false"
+                        app:text="Favorites" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="#F3F4F6"
+                        android:visibility="gone" />
+
+
+                    <com.utilitytoolbox.qrscanner.barcodescanner.view.BtnSettings
+                        android:id="@+id/fmDeleteHistory"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="4dp"
+                        app:hint="Delete all previous history"
+                        app:isDelimiterVisible="false"
+                        app:isSwitchVisible="false"
+                        app:text="Delete History" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="#F3F4F6" />
+
+                    <com.utilitytoolbox.qrscanner.barcodescanner.view.BtnSettings
+                        android:id="@+id/fmHelp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="4dp"
+                        android:visibility="gone"
+                        app:hint="How to Scan?"
+                        app:isDelimiterVisible="false"
+                        app:isSwitchVisible="false"
+                        app:text="Help" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="#F3F4F6" />
+
+                    <com.utilitytoolbox.qrscanner.barcodescanner.view.BtnSettings
+                        android:id="@+id/fmShare"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="4dp"
+                        android:visibility="gone"
+                        app:hint="Share the app with friends &amp; family"
+                        app:isDelimiterVisible="false"
+                        app:isSwitchVisible="false"
+                        app:text="Share" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="#F3F4F6" />
+
+                    <com.utilitytoolbox.qrscanner.barcodescanner.view.BtnSettings
+                        android:id="@+id/fmRateUs"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="4dp"
+                        android:visibility="gone"
+                        app:hint="Please take a moment to rate the app"
+                        app:isDelimiterVisible="false"
+                        app:isSwitchVisible="false"
+                        app:text="Rate Us" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="#F3F4F6" />
+
+                    <com.utilitytoolbox.qrscanner.barcodescanner.view.BtnSettings
+                        android:id="@+id/fmConcent"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="4dp"
+                        android:visibility="gone"
+                        app:hint="Update your personalize Ads consent"
+                        app:isDelimiterVisible="false"
+                        app:isSwitchVisible="false"
+                        app:text="Update Consent" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="#F3F4F6" />
+
+                    <com.utilitytoolbox.qrscanner.barcodescanner.view.BtnSettings
+                        android:id="@+id/iv_privacy_policy"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="4dp"
+                        android:visibility="visible"
+                        app:hint="Terms and Conditions"
+                        app:isDelimiterVisible="false"
+                        app:isSwitchVisible="false"
+                        app:text="Privacy Policy" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="#F3F4F6" />
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

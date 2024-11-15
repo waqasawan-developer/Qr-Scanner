@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "633585516296",
+    "project_id": "qr-scanner-e0b53",
+    "storage_bucket": "qr-scanner-e0b53.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:633585516296:android:4eaac1d0c953383fe6b6bd",
+        "android_client_info": {
+          "package_name": "cm.utilitytoolbox.qrscanner.barcodescanner"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDIH_DH_sO3aOzXkizFCA1-Gl6dyRECADQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

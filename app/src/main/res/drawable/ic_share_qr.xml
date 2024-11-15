@@ -1,0 +1,77 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="24dp"
+    android:height="24dp"
+    android:viewportWidth="500"
+    android:viewportHeight="500">
+  <group>
+    <clip-path
+        android:pathData="M0,0h500v500H0z"/>
+    <group>
+      <clip-path
+          android:pathData="M0,0h500v500H0z"/>
+      <path
+          android:pathData="m302.9,161.06 l-126.65,63.32m232.46,-80.4c0,28.54 -23.12,51.66 -51.66,51.66s-51.66,-23.12 -51.66,-51.66 23.12,-51.66 51.66,-51.66c28.54,0 51.66,23.12 51.66,51.66z"
+          android:fillColor="@color/toolbar_menu_color"/>
+      <path
+          android:pathData="m302.9,161.06 l-126.65,63.32"
+          android:strokeLineJoin="round"
+          android:strokeWidth="41.66"
+          android:fillColor="@color/toolbar_menu_color"
+          android:strokeColor="@color/toolbar_menu_color"
+          android:strokeLineCap="round"/>
+      <path
+          android:pathData="M408.74,143.93c0,28.56 -23.14,51.68 -51.7,51.68 -28.56,0 -51.7,-23.12 -51.7,-51.68 0,-28.56 23.14,-51.7 51.7,-51.7 28.56,0 51.7,23.14 51.7,51.7z"
+          android:strokeLineJoin="round"
+          android:strokeWidth="31.245"
+          android:fillColor="@color/toolbar_menu_color"
+          android:strokeColor="@color/toolbar_menu_color"
+          android:strokeLineCap="round"/>
+      <path
+          android:pathData="m303.1,338.54 l-126.79,-63.04m212.56,134.29c-25.29,19.06 -61.17,14.01 -80.22,-11.27 -19.05,-25.29 -14.01,-61.17 11.27,-80.22 25.29,-19.06 61.17,-14.01 80.22,11.27 19.06,25.29 14.01,61.17 -11.27,80.22z"
+          android:fillColor="@color/toolbar_menu_color"/>
+      <path
+          android:pathData="m303.1,338.54 l-126.79,-63.04"
+          android:strokeLineJoin="round"
+          android:strokeWidth="41.66"
+          android:fillColor="@color/toolbar_menu_color"
+          android:strokeColor="@color/toolbar_menu_color"
+          android:strokeLineCap="round"/>
+      <path
+          android:pathData="M388.88,409.79c-25.27,19.04 -61.18,13.99 -80.22,-11.27 -19.04,-25.27 -13.99,-61.18 11.27,-80.22 25.27,-19.04 61.18,-13.99 80.22,11.27 19.04,25.27 13.99,61.18 -11.27,80.22z"
+          android:strokeLineJoin="round"
+          android:strokeWidth="31.245"
+          android:fillColor="@color/toolbar_menu_color"
+          android:strokeColor="@color/toolbar_menu_color"
+          android:strokeLineCap="round"/>
+      <group>
+        <clip-path
+            android:pathData="M0,0h500v500H0z"/>
+        <path
+            android:pathData="M180.76,250c0,28.58 -23.16,51.74 -51.74,51.74 -28.58,0 -51.74,-23.16 -51.74,-51.74 0,-28.58 23.16,-51.74 51.74,-51.74 28.58,0 51.74,23.16 51.74,51.74z"
+            android:strokeAlpha="0"
+            android:fillColor="@color/toolbar_menu_color"
+            android:fillAlpha="0"/>
+        <path
+            android:pathData="M180.76,250c0,28.58 -23.16,51.74 -51.74,51.74 -28.58,0 -51.74,-23.16 -51.74,-51.74 0,-28.58 23.16,-51.74 51.74,-51.74 28.58,0 51.74,23.16 51.74,51.74z"
+            android:strokeAlpha="0"
+            android:strokeLineJoin="round"
+            android:strokeWidth="31.245"
+            android:fillColor="@color/toolbar_menu_color"
+            android:strokeColor="@color/toolbar_menu_color"
+            android:fillAlpha="0"
+            android:strokeLineCap="round"/>
+      </group>
+    </group>
+    <group>
+      <clip-path
+          android:pathData="M0,0h500v500H0z"/>
+      <path
+          android:pathData="M349.41,304.1c-15.33,0 -29.33,5.31 -40.68,13.94L195.45,261.98c0.71,-3.92 1.21,-7.87 1.21,-11.98 0,-4 -0.52,-7.87 -1.19,-11.69l111.5,-56.35a67.07,67.07 135,0 0,42.49 15.44,67.78 67.78,0 0,0 67.7,-67.7 67.78,67.78 0,0 0,-67.7 -67.7,67.78 67.78,0 0,0 -67.7,67.7c0,5.94 1.02,11.6 2.46,17.08l-108.23,54.68a67.3,67.3 45,0 0,-47.03 -19.16,67.78 67.78,0 0,0 -67.7,67.7 67.78,67.78 0,0 0,67.7 67.7c18.16,0 34.62,-7.29 46.78,-18.98l109.05,53.95a66.8,66.8 0,0 0,-3.08 19.12,67.78 67.78,0 0,0 67.7,67.7 67.78,67.78 0,0 0,67.7 -67.7,67.78 67.78,0 0,0 -67.7,-67.7z"
+          android:fillColor="@color/toolbar_menu_color"/>
+    </group>
+    <group>
+      <clip-path
+          android:pathData="M0,0h500v500H0z"/>
+    </group>
+  </group>
+</vector>

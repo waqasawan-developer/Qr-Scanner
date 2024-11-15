@@ -1,0 +1,139 @@
+<resources>
+    <string name="app_name">Barcode Scanner</string>
+    <string name="text_without_special_characters">Text without special characters</string>
+    <string name="ad_attribution">AD</string>
+    <string name="scan_tab">Scan</string>
+    <string name="create_tab">Create</string>
+    <string name="create_menu_item_title">Create</string>
+    <string name="show_barcode_image">View code</string>
+
+    <string name="history_tab">History</string>
+    <string name="favorite_history_tab">Favorite</string>
+    <string name="settings_tab">Settings</string>
+    <string name="back_camera">Back Camera</string>
+    <string name="front_camera">Front Camera</string>
+    <string name="system_default">System Default</string>
+    <string name="light_mode">Light</string>
+    <string name="dark_mode">Dark</string>
+    <string name="engine_bing">Bing</string>
+    <string name="engine_duck_duck_go">DuckDuckGo</string>
+    <string name="engine_google">Google</string>
+    <string name="engine_qwant">Qwant</string>
+    <string name="engine_startpage">Startpage</string>
+    <string name="engine_yahoo">Yahoo</string>
+    <string name="engine_yandex">Yandex</string>
+    <string name="you_need_to_allow_camera_permission">You need to allow necessary permissions in Settings manually</string>
+    <string name="you_need_to_allow_notification_permission">You need to allow notification permissions in Settings</string>
+    <string name="error_dlg_positive_button_text">OK</string>
+    <string name="dlg_delete_positive_btn">Delete</string>
+    <string name="dlg_delete_negative_btn">Cancel</string>
+    <string name="dlg_delete_clear_history_title">Delete history?</string>
+    <string name="history_title">History</string>
+    <string name="txt_data_saved">Text file saved</string>
+    <string name="csv_data_saved">CSV file saved</string>
+    <string name="code_no_app">No app found for this action</string>
+    <string name="connecting_to_wifi">Connecting…</string>
+    <string name="code_copied">Copied to clipboard</string>
+    <string name="dlg_confirm_code_title">Confirm</string>
+    <string name="dlg_confirm_code_positive_btn">OK</string>
+    <string name="dlg_confirm_code_negative_btn">Cancel</string>
+    <string name="error_dlg_message">Something went wrong</string>
+    <string name="error_dlg_title">Error</string>
+    <string name="delete_history">Delete History</string>
+    <string name="are_you_sure_you_want_to_clear_your_history_data_this_action_will_not_be_undo">Are you sure you want to clear your history data? This action will not be undo.</string>
+    <string name="delete">Delete</string>
+    <string name="are_you_sure_you_want_to_delete">Are you sure you want to delete?</string>
+    <string name="text_file_name_saved">Saved to Downloads</string>
+    <string name="clipboard">CLipBoard</string>
+    <string name="qr_code_text">Text</string>
+    <string name="file_name_save">Save</string>
+    <string name="file_name_saved">Saved to Gallery</string>
+    <string name="schema_bookmark">Bookmark</string>
+    <string name="schema_cryptocurrency">Bitcoin</string>
+    <string name="schema_email">Email</string>
+    <string name="schema_geo">Location</string>
+    <string name="schema_google_maps">Address</string>
+    <string name="schema_google_play">App</string>
+    <string name="schema_mms">MMS</string>
+    <string name="schema_me_card">Contact</string>
+    <string name="schema_phone">Phone</string>
+    <string name="schema_otp">OTP</string>
+    <string name="schema_sms">SMS</string>
+    <string name="schema_url">URL</string>
+    <string name="schema_wifi">Wi-Fi</string>
+
+    <string name="schema_v_event">Event</string>
+    <string name="schema_v_card">Contact (VCard)</string>
+    <string name="schema_youtube">Youtube URL</string>
+    <string name="schema_other">Text</string>
+
+    <string name="format_aztec" translatable="false">Aztec</string>
+    <string name="format_codabar" translatable="false">Codabar</string>
+    <string name="format_code_39" translatable="false">Code 39</string>
+    <string name="format_code_93" translatable="false">Code 93</string>
+    <string name="format_code_128" translatable="false">Code 128</string>
+    <string name="format_data_matrix" translatable="false">Matrix</string>
+    <string name="format_ean_8" translatable="false">EAN-8</string>
+    <string name="format_ean_13" translatable="false">EAN-13</string>
+    <string name="format_itf_14" translatable="false">ITF</string>
+    <string name="format_pdf_417" translatable="false">PDF417</string>
+    <string name="format_upc_a" translatable="false">UPC-A</string>
+    <string name="format_upc_e" translatable="false">UPC-E</string>
+    <string name="format_qr_code">QR Code</string>
+    <string name="add_to_calendar">Add to calendar</string>
+    <string name="add_to_contacts">Add to contacts</string>
+    <string name="call_phone">Dial</string>
+    <string name="send_sms">Send SMS</string>
+    <string name="send_email">Send Email</string>
+    <string name="show_location">Show location</string>
+    <string name="connect_to_wifi">Connect to Wi-Fi</string>
+    <string name="wifi_settings">Open Wi-Fi settings</string>
+    <string name="copy_network_name">Copy name</string>
+    <string name="copy_network_password">Copy password</string>
+    <string name="code_open_app">Open app</string>
+    <string name="open_in_play_store">Open PlayStore</string>
+    <string name="open_in_youtube">Open Youtube</string>
+    <string name="save_bookmark">Save to bookmarks</string>
+    <string name="code_open_link">Open link</string>
+    <string name="increase_brightness">Increase brightness</string>
+    <string name="decrease_brightness">Decrease brightness</string>
+    <string name="text_file_name_save">Save</string>
+    <string name="code_as_image_title">Save</string>
+    <string name="image_save_as_hint">Save as</string>
+    <string name="save_as_image">Save</string>
+
+
+    <array name="cameraSelection">
+        <item>@string/back_camera</item>
+        <item>@string/front_camera</item>
+    </array>
+
+    <array name="searchEngineSelectiom">
+        <item>@string/engine_bing</item>
+        <item>@string/engine_duck_duck_go</item>
+        <item>@string/engine_google</item>
+        <item>@string/engine_qwant</item>
+        <!--  <item>@string/engine_startpage</item>-->
+        <item>@string/engine_yahoo</item>
+        <item>@string/engine_yandex</item>
+    </array>
+
+
+
+    <array name="themeSelection">
+        <item>@string/system_default</item>
+        <item>@string/light_mode</item>
+        <item>@string/dark_mode</item>
+    </array>
+
+    <string-array name="wifi_encryption">
+        <item>WPA/WPA2</item>
+        <item>WEP</item>
+        <item>None</item>
+    </string-array>
+
+    <string-array name="image_formats">
+        <item>PNG</item>
+        <item>SVG</item>
+    </string-array>
+</resources>

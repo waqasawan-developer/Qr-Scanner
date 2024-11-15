@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/ClickableBackground"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="16dp">
+
+    <FrameLayout
+        android:id="@+id/layout_image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/main_ui_bg"
+        android:padding="@dimen/icon_button_icon_padding"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/image_view_schema"
+            android:layout_width="22dp"
+            android:layout_height="22dp"
+            android:layout_gravity="center_vertical"
+            app:tint="@color/color_accent"
+            tools:src="@drawable/ic_text_c" />
+    </FrameLayout>
+
+    <TextView
+        android:id="@+id/text_view_format"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/default_margin"
+        android:textSize="14sp"
+        android:fontFamily="@font/poppins_medium"
+        android:textColor="@color/black"
+        app:layout_constraintStart_toEndOf="@id/layout_image"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="Data matrix" />
+
+    <TextView
+        android:id="@+id/text_view_text"
+        style="@style/DefaultTextViewStyle"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/default_margin_very_small"
+        android:layout_marginEnd="@dimen/default_margin_small"
+        android:ellipsize="end"
+        android:includeFontPadding="false"
+        android:maxLines="1"
+        android:textColor="@color/unSelectedTextColor"
+        app:layout_constraintEnd_toStartOf="@id/image_view_favorite"
+        app:layout_constraintStart_toStartOf="@id/text_view_format"
+        app:layout_constraintTop_toBottomOf="@id/text_view_format"
+        tools:text="Hello World!" />
+
+    <TextView
+        android:layout_marginStart="10dp"
+        android:id="@+id/tv_date"
+        style="@style/SecondaryTextViewStyle"
+        android:layout_width="0dp"
+        android:textColor="@color/unSelectedTextColor"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="@+id/text_view_format"
+        app:layout_constraintEnd_toEndOf="@+id/text_view_text"
+        app:layout_constraintStart_toEndOf="@+id/text_view_format"
+        app:layout_constraintTop_toTopOf="@+id/text_view_format"
+        tools:text="01 Aug, 2023 12:49 AM" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/image_view_favorite"
+        style="@style/ClickableBackground"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/default_margin"
+        android:clickable="true"
+        android:focusable="true"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/iv_delete_qr"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_favorite_qr_checked" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/iv_delete_qr"
+        style="@style/ClickableBackground"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:focusable="true"
+        android:tint="@color/gray"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_delete_qr" />
+
+<!--
+    <View
+        android:id="@+id/delimiter"
+        android:layout_width="0dp"
+        android:layout_height="0.2dp"
+        android:layout_marginHorizontal="@dimen/default_margin"
+        android:background="@color/delimiter_color"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text_view_text" />
+-->
+
+</androidx.constraintlayout.widget.ConstraintLayout>
